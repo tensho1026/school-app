@@ -124,6 +124,7 @@ function Menu() {
           <Link href={item.href} key={item.label}>
           <Image src={item.icon} alt="" width={20} height={20}/>
           <span>{item.label}</span>
+          <p>kjfojofopjfo</p>
           </Link>
         ))}
       </div>
