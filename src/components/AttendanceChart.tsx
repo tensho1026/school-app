@@ -58,7 +58,7 @@ function AttendanceChart() {
           />
           <YAxis axisLine={false} tick={{ fill: "#d1d5db" }} tickLine={false} />
           <Tooltip
-            contentStyle={{ borderRadius: "10px", borderColor: "lightgray" }}
+            contentStyle={{ borderRadius:"10px", borderColor: "lightgray" }}
           />
           <Legend
             align='left'
