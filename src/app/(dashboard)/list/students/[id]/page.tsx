@@ -143,4 +143,4 @@ function page() {
   );
 }
 
-export default page;
+export default page
