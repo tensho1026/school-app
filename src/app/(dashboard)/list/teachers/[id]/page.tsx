@@ -3,28 +3,51 @@ import BigCalendar from "@/components/BigCalendar";
 import Announcement from "@/components/Announcement";
 import Link from "next/link";
 import Performance from "@/components/Performance";
+import FormModal from "@/components/FormModal";
+import { role } from "@/lib/data";
 
 function page() {
   return (
     <div className='flex-1 p-4 flex flex-col gap-4 xl:flex-row'>
       {/* {LEFT} */}
       <div className='w-full xl:w-2/3'>
-        {/* {TOP} */}
+        {/* TOP */}
         <div className='flex flex-col lg:flex-row gap-4'>
-          {/* {USER INFO CARD} */}
-          <div className='bg-lamaSky py-6 px-4 rounded-md flex-1 flex gap-4'>
-            <div className='w-1/3'>
+          {/* USER INFO CARD */}
+          <div className='bg-lamaSky py-6 px-4 rounded-md flex-1 flex gap-4 '>
+            <div className='w-1/3 xl:rounded-full'>
               <Image
-                src=''
+                src='https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1200'
                 alt=''
                 width={144}
                 height={144}
-                layout='intrinsic'
-                className='w-36 h-36 rounded-full object-cover bg-red-300'
+                className='w-36 h-36 rounded-full object-cover xl:h-[60%]'
               />
             </div>
             <div className='w-2/3 flex flex-col justify-between gap-4'>
-              <h1 className='text-xl font-semibold'>Lonard snyder</h1>
+              <div className='flex items-center gap-4'>
+                <h1 className='text-xl font-semibold'>Leonard Snyder</h1>
+                {role === "admin" && (
+                  <FormModal
+                    table='teacher'
+                    type='update'
+                    data={{
+                      id: 1,
+                      username: "deanguerrero",
+                      email: "deanguerrero@gmail.com",
+                      password: "password",
+                      firstName: "Dean",
+                      lastName: "Guerrero",
+                      phone: "+1 234 567 89",
+                      address: "1234 Main St, Anytown, USA",
+                      bloodType: "A+",
+                      dateOfBirth: "2000-01-01",
+                      sex: "male",
+                      img: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1200",
+                    }}
+                  />
+                )}
+              </div>
               <p className='text-sm text-gray-500'>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               </p>
