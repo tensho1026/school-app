@@ -1,7 +1,13 @@
+import Link from "next/link";
+
 const Homepage = () => {
   return (
-    <div className=''>Homepage</div>
-  )
-}
+    <div className=' cursor-pointer'>
+      <Link href='/list/teachers'>
+        <p>こちらをクリックしてください</p>
+      </Link>
+    </div>
+  );
+};
 
-export default Homepage
+export default Homepage;
