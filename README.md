@@ -1,25 +1,27 @@
-School Management Dashboard
+![スクリーンショット 2025-03-20 134754](https://github.com/user-attachments/assets/6921d7e4-3b4a-4859-9a14-d7505dddf5a7)School App 🚀
+# School App 🚀
 
-## Getting Started
+[School App を見る](https://school-app-ochre.vercel.app/)
 
-First, run the development server:
+## 📚 概要
+School Appは、学校管理をサポートするアプリケーションです。  
+UIはすべて完成しており、現在は機能面の開発を進めています。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠 技術スタック
+- Next.js
+- TypeScript
+- React
+- TailwindCSS
+- Charts
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+(https://github.com/user-attachments/assets/697b2c39-8a8f-4136-8d69-d34a9d46ac58)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+📚 概要
+School Appは、学校管理をサポートするアプリケーションです。
+UIはすべて完成しており、現在は機能面の開発を進めています。
 
+TailwindCSS
+Charts
 
